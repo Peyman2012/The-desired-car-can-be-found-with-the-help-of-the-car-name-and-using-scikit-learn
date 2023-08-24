@@ -37,6 +37,20 @@ This code gives the number of answers requested:
 
       for i in range(len(new_data_1)):
           print(f'Car: {name[i]} ==> Price : {ans[i][0]}')
+          
+This code is for selecting the rows that are equal to the name of the car entered by the user to train the machine learning model:
+
+    def_name = df[df['Name Car'] == n_input]
+    Miles_Car = def_name['Miles Car']
+    Year_Car = def_name['Year Car']
+    Accident_Car = def_name['Accident Car']
+    Owner_Car = def_name['Owner Car']
+    Price_Car = def_name['Price Car']
+    Name_car = def_name['Name Car']
+    Color_Exterior = def_name['Color Exterior']
+    Color_Interior = def_name['Color Interior']
+    Person_Car = def_name['Person Car']
+    Model_Car = def_name['Model Car']
 
 Link to the dataset I collected in Keggle:
 
