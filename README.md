@@ -52,6 +52,17 @@ This code is for selecting the rows that are equal to the name of the car entere
     Person_Car = def_name['Person Car']
     Model_Car = def_name['Model Car']
 
+
+It finds the indexes of the rows of the car searched by the user and by using "for" the numbers of these indexes are placed in the variables that we took from the columns of the data set and those rows that have the user's desired car in a list called "x" " puts :
+
+    a = Miles_Car.index.get_level_values(0)
+    x=[]
+    y=[]
+    for i in a:
+        x.append([Miles_Car[i], Year_Car[i], Accident_Car[i], Owner_Car[i]])
+        y.append([Price_Car[i]])
+        
+
 Link to the dataset I collected in Keggle:
 
 https://www.kaggle.com/datasets/peimandaii/buy-car
